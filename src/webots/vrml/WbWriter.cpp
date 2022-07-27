@@ -169,6 +169,13 @@ void WbWriter::writeFooter(const QStringList *info) {
     *this << "</robot>\n";
 }
 
+void WbWriter::addResourceToList(const QString &url, const QString &fileName) {
+  QString sanitizedUrl(url);
+  if (isX3d() and sanitizedUrl.startsWith("./"))
+    sanitizedUrl = sanitizedUrl.right(sanitizedUrl.size() - 2);
+  mResourcesList[sanitizedUrl.replace(" ", "%20")] = fileName;
+}
+
 WbWriter &WbWriter::operator<<(const QString &s) {
   if (mString)
     *mString += s;
