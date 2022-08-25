@@ -10,11 +10,11 @@ PROTO LowerProtoLowerScope [
       Shape {
         appearance PBRAppearance {
           baseColorMap ImageTexture {
-            url "./red_texture.jpg"
+            url "../../../../colors/red_texture.jpg"
           }
         }
         geometry Mesh {
-          url "./mesh_width_2m.obj"
+          url "../../../../meshes/mesh_width_2m.obj"
         }
       }
     ]

@@ -2,10 +2,10 @@
 
 EXTERNPROTO "webots://tests/default/protos/TestSuiteEmitter.proto"
 EXTERNPROTO "webots://tests/default/protos/TestSuiteSupervisor.proto"
-EXTERNPROTO "../protos/derived_proto/UpperProto/UpperProtoLowerScope.proto"
-EXTERNPROTO "../protos/derived_proto/UpperProto/UpperProtoMiddleScope.proto"
-EXTERNPROTO "../protos/derived_proto/UpperProto/UpperProtoUpperScope.proto"
-EXTERNPROTO "../protos/derived_proto/UpperProto/UpperProtoWorldScope.proto"
+EXTERNPROTO "../protos/derived_proto/UpperProtoLowerScope.proto"
+EXTERNPROTO "../protos/derived_proto/UpperProtoMiddleScope.proto"
+EXTERNPROTO "../protos/derived_proto/UpperProtoUpperScope.proto"
+EXTERNPROTO "../protos/derived_proto/UpperProtoWorldScope.proto"
 
 WorldInfo {
 }
@@ -27,8 +27,8 @@ UpperProtoUpperScope {
 }
 UpperProtoWorldScope {
   translation 0 0 6
-  url_texture3 "./textures/yellow_texture.jpg"
-  url_mesh3 "./meshes/mesh_width_8m.obj"
+  url_texture3 "../colors/yellow_texture.jpg"
+  url_mesh3 "../meshes/mesh_width_8m.obj"
 }
 Robot {
   translation -3 0 0
